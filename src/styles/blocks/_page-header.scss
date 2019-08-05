@@ -3,8 +3,9 @@
 .page-header {
   @extend %flex-center;
 
-  width: 100%;
+  max-width: 100vw;
   min-height: 60px;
+  overflow-x: hidden;
   padding: 0 50px;
 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);

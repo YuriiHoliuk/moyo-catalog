@@ -1,15 +1,4 @@
-.page-header, .main-navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.page-header, .main-navigation__list {
+.page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,8 +10,20 @@
           align-items: center; }
 
 .page-header {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.page-header {
+  max-width: 100vw;
   min-height: 60px;
+  overflow-x: hidden;
   padding: 0 50px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
@@ -39,9 +40,11 @@
         align-self: flex-end; }
 
 .page-content {
+  max-width: 100vw;
+  overflow-x: hidden;
   padding-top: 50px; }
 
-.page-header, .main-navigation__list {
+.page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +56,15 @@
           align-items: center; }
 
 .main-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
@@ -66,13 +78,14 @@
   transition: color 0.3s;
   font-size: 12px;
   line-height: 14px;
+  font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
-  font-weight: 500;
+  white-space: nowrap;
   position: relative;
   display: inline-block;
-  padding-bottom: 23px; }
+  padding: 10px 0 23px; }
   .main-navigation__link:hover {
     color: #00acdc; }
   .main-navigation__link--active {
