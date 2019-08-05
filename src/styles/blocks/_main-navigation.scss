@@ -16,9 +16,8 @@
 
   &__link {
     @include hover(color, $c-main);
+    @include font-sm;
 
-    font-size: 12px;
-    line-height: 14px;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;

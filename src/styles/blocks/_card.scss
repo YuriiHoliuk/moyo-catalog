@@ -17,16 +17,15 @@
   }
 
   &__title {
-    font-size: 12px;
-    line-height: 15px;
+    @include font-sm;
+
     font-weight: 500;
 
     margin-bottom: 6px;
   }
 
   &__details {
-    font-size: 11px;
-    line-height: 13px;
+    @include font-xs;
 
     margin-bottom: 15px;
   }
@@ -38,8 +37,7 @@
   }
 
   &__reviews {
-    font-size: 11px;
-    line-height: 13px;
+    @include font-xs;
   }
 
   &__price {
@@ -49,13 +47,11 @@
 
     margin-bottom: 20px;
 
-    font-size: 11px;
-    line-height: 13px;
+    @include font-xs;
   }
 
   &__price-value {
-    font-size: 16px;
-    line-height: 19px;
+    @include font-lg;
     font-weight: 700;
   }
 
@@ -68,8 +64,7 @@
     background-color: $c-main;
     border-radius: 5px;
 
-    font-size: 14px;
-    line-height: 15px;
+    @include font-md;
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
