@@ -1,0 +1,29 @@
+@import "../utils";
+
+.page-header {
+  @extend %flex-center;
+
+  width: 100%;
+  min-height: 60px;
+  padding: 0 50px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  &__logo {
+    margin: 0;
+    line-height: 0;
+  }
+
+  &__logo-link {
+    display: inline-block;
+  }
+
+  &__logo-img {
+    max-height: 40px;
+    width: auto;
+  }
+
+  &__navigation {
+    align-self: flex-end;
+  }
+}

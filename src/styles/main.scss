@@ -1,7 +1,12 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+
+@import "./blocks/page-header";
+@import "./blocks/page-content";
+@import "./blocks/main-navigation";
+@import "./blocks/cards-list";
+@import "./blocks/card";
+@import "./blocks/stars";
 
 body {
-  background: $c-gray;
+  font-family: Roboto, sans-serif;
 }
