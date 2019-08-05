@@ -1,0 +1,78 @@
+@import "../utils";
+
+.card {
+  width: 200px;
+
+  border: 1px solid $c-gray;
+  border-radius: 5px;
+  padding: 15px;
+
+  &__picture {
+    padding: 15px 5px 45px;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+
+    margin-bottom: 6px;
+  }
+
+  &__details {
+    font-size: 11px;
+    line-height: 13px;
+
+    margin-bottom: 15px;
+  }
+
+  &__rating {
+    @extend %flex-between;
+
+    margin-bottom: 20px;
+  }
+
+  &__reviews {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  &__price {
+    @extend %flex-between;
+
+    align-items: baseline;
+
+    margin-bottom: 20px;
+
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  &__price-value {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+  }
+
+  &__button {
+    @include hover(background-color, lighten($c-main, 5%));
+
+    width: 100%;
+    padding: 12px 20px;
+
+    background-color: $c-main;
+    border-radius: 5px;
+
+    font-size: 14px;
+    line-height: 15px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

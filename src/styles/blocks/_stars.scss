@@ -1,0 +1,21 @@
+@import "../utils";
+
+.stars {
+  display: flex;
+  align-items: center;
+
+  &__star {
+    width: 15px;
+    height: 15px;
+
+    background: url("../../images/star.svg") no-repeat center;
+
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    &--active {
+      background-image: url("../../images/star-active.svg");
+    }
+  }
+}

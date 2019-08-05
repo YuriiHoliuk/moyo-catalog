@@ -1,0 +1,8 @@
+@import "../utils";
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 50px 48px;
+  justify-items: center;
+}
