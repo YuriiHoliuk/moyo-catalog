@@ -1,17 +1,6 @@
 @import "../utils";
 
-.main-navigation {
-  &__list {
-    @extend %flex-center;
-
-    flex-wrap: wrap;
-    list-style: none;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 20px;
-  }
-
+.site-nav {
   &__link {
     @include hover(color, $c-main);
 
@@ -42,5 +31,16 @@
         background-color: $c-main;
       }
     }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__list {
+    @extend %flex-center;
+
+    flex-wrap: wrap;
+    list-style: none;
   }
 }

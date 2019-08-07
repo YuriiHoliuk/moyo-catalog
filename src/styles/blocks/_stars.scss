@@ -4,7 +4,7 @@
     width: 13px;
     height: 12px;
 
-    background: url("../../images/star.svg") no-repeat center;
+    background: url("/images/star.svg") no-repeat center;
     background-size: cover;
 
     &:not(:last-child) {
@@ -12,7 +12,7 @@
     }
 
     &--active {
-      background-image: url("../../images/star-active.svg");
+      background-image: url("/images/star-active.svg");
     }
   }
 }
