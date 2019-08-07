@@ -1,0 +1,25 @@
+@import "../utils";
+
+.btn {
+  @include hover(background-color, darken($c-white, 10%));
+
+  font-size: $fz-md;
+  line-height: $lh-md;
+  font-weight: 700;
+
+  width: 100%;
+  padding: 12px 20px;
+
+  background-color: $c-white;
+  border: 1px solid $c-gray;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &--primary {
+    @include hover(background-color, lighten($c-main, 10%));
+
+    border: none;
+    background-color: $c-main;
+    color: $c-white;
+  }
+}

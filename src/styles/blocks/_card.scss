@@ -1,0 +1,64 @@
+@import "../utils";
+
+.card {
+  width: 200px;
+  padding: $gap-sm;
+
+  border: 1px solid $c-gray;
+  border-radius: 5px;
+
+  &__picture {
+    padding: $gap-sm 5px;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    font-size: $fz-sm;
+    line-height: $lh-md;
+    font-weight: 500;
+
+    margin-bottom: 6px;
+  }
+
+  &__details {
+    font-size: $fz-xs;
+    line-height: $lh-xs;
+
+    margin-bottom: $gap-sm;
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  &__reviews {
+    font-size: $fz-xs;
+    line-height: $lh-xs;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    font-size: $fz-xs;
+    line-height: $lh-xs;
+
+    margin-bottom: 20px;
+  }
+
+  &__price-value {
+    font-size: $fz-lg;
+    line-height: $lh-lg;
+    font-weight: 700;
+  }
+}
